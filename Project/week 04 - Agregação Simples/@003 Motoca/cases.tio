@@ -1,0 +1,257 @@
+>>>>>>>> subindo e buzinando
+show
+end
+========
+$show
+power:1, time:0, person:(empty)
+$end
+<<<<<<<<
+
+>>>>>>>> subindo
+show
+enter marcos 4
+show
+end
+========
+$show
+power:1, time:0, person:(empty)
+$enter marcos 4
+$show
+power:1, time:0, person:(marcos:4)
+$end
+<<<<<<<<
+
+>>>>>>>> ocupada
+show
+enter marcos 4
+show
+enter marisa 2
+show
+end
+========
+$show
+power:1, time:0, person:(empty)
+$enter marcos 4
+$show
+power:1, time:0, person:(marcos:4)
+$enter marisa 2
+fail: busy motorcycle
+$show
+power:1, time:0, person:(marcos:4)
+$end
+<<<<<<<<
+
+>>>>>>>> subindo2
+init 5
+show
+end
+========
+$init 5
+$show
+power:5, time:0, person:(empty)
+$end
+<<<<<<<<
+
+>>>>>>>> buzinando
+init 5
+show
+enter marcos 4
+show
+end
+========
+$init 5
+$show
+power:5, time:0, person:(empty)
+$enter marcos 4
+$show
+power:5, time:0, person:(marcos:4)
+$end
+<<<<<<<<
+
+>>>>>>>> subindo e trocando
+init 7
+enter heitor 6
+show
+leave
+end
+========
+$init 7
+$enter heitor 6
+$show
+power:7, time:0, person:(heitor:6)
+$leave
+heitor:6
+$end
+<<<<<<<<
+
+>>>>>>>> empty
+init 7
+enter heitor 6
+show
+leave
+leave
+end
+========
+$init 7
+$enter heitor 6
+$show
+power:7, time:0, person:(heitor:6)
+$leave
+heitor:6
+$leave
+fail: empty motorcycle
+$end
+<<<<<<<<
+
+>>>>>>>> replace
+init 7
+enter heitor 6
+show
+leave
+leave
+enter suzana 8
+show
+end
+========
+$init 7
+$enter heitor 6
+$show
+power:7, time:0, person:(heitor:6)
+$leave
+heitor:6
+$leave
+fail: empty motorcycle
+$enter suzana 8
+$show
+power:7, time:0, person:(suzana:8)
+$end
+<<<<<<<<
+
+>>>>>>>> no time
+init 7
+buy 30
+show
+buy 10
+show
+end
+========
+$init 7
+$buy 30
+$show
+power:7, time:30, person:(empty)
+$buy 10
+$show
+power:7, time:40, person:(empty)
+$end
+<<<<<<<<
+
+>>>>>>>> buy time
+init 7
+drive 10
+buy 50
+end
+========
+$init 7
+$drive 10
+fail: buy time first
+$buy 50
+$end
+<<<<<<<<
+
+>>>>>>>> empty
+init 7
+drive 10
+buy 50
+drive 10
+enter suzana 8
+end
+========
+$init 7
+$drive 10
+fail: buy time first
+$buy 50
+$drive 10
+fail: empty motorcycle
+$enter suzana 8
+$end
+<<<<<<<<
+
+>>>>>>>> driving
+init 7
+drive 10
+buy 50
+drive 10
+enter suzana 8
+drive 30
+show
+end
+========
+$init 7
+$drive 10
+fail: buy time first
+$buy 50
+$drive 10
+fail: empty motorcycle
+$enter suzana 8
+$drive 30
+$show
+power:7, time:20, person:(suzana:8)
+$end
+<<<<<<<<
+
+>>>>>>>> limite de idade
+init 7
+buy 20
+enter andreina 23
+drive 15
+show
+end
+========
+$init 7
+$buy 20
+$enter andreina 23
+$drive 15
+fail: too old to drive
+$show
+power:7, time:20, person:(andreina:23)
+$end
+<<<<<<<<
+
+>>>>>>>> acabou o tempo
+init 7
+buy 20
+enter andreina 6
+drive 15
+show
+drive 10
+show
+end
+========
+$init 7
+$buy 20
+$enter andreina 6
+$drive 15
+$show
+power:7, time:5, person:(andreina:6)
+$drive 10
+fail: time finished after 5 minutes
+$show
+power:7, time:0, person:(andreina:6)
+$end
+<<<<<<<<
+
+>>>>>>>> buzinando
+init 1
+honk
+init 5
+honk
+end
+========
+$init 1
+$honk
+Pem
+$init 5
+$honk
+Peeeeem
+$end
+<<<<<<<<
