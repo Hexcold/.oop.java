@@ -1,3 +1,5 @@
+    import java.text.DecimalFormat;
+
 class Lead {
     private float thickness; //calibre
     private String hardness; //dureza
@@ -22,7 +24,7 @@ class Lead {
     }
 
     public void setSize(int size) {
-
+        this.size = size;
     }
 
     public int usagePerSheet() {

@@ -8,10 +8,11 @@ class Pencil {
     }
 
     public float getThickness() {
+        return this.thickness;
     }
 
     public void setThickness(float value) {
-        
+        this.thickness = value;
     }
 
     public boolean hasGrafite() {
@@ -23,10 +24,13 @@ class Pencil {
 
     public boolean insert(Lead grafite) {
         if(this.tip == null){
-            if(grafite.getThickness() == this.thickness){
-                grafite.getThickness();
+            if(grafite.getThickness() == this.thickness) {
+                this.tip = grafite;
                 return true;
             }
+            System.out.println("fail: calibre incompativel");
+        } else {
+            System.out.println("fail: ja existe grafite");
         }
         return false;
     }
@@ -41,7 +45,19 @@ class Pencil {
 
     public void writePage() {
         if(this.tip == null){
+            System.out.println("fail: nao existe grafite");
             return;
+        }
+
+        if(this.tip.getSize() > 10){
+            if(tip.getSize() - tip.usagePerSheet() < 10){
+                tip.setSize(10);
+                System.out.println("fail: folha incompleta");
+                return;
+            }
+            tip.setSize(tip.getSize() - tip.usagePerSheet());
+        }else{
+            System.out.println("fail: tamanho insuficiente");
         }
 
     }
