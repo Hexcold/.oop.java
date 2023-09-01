@@ -49,20 +49,34 @@ class Motorcycle {
     }
 
     public void drive(int time) {
-        if(person != null && person.getAge() <= 10 && this.time >= time){
-            this.time -= time;
+      if(this.time > 0 ){
+        if(person != null){
+          if(person.getAge() <= 10) {
+              if(this.time < time){
+                System.out.println("fail: time finished after " + this.time + " minutes");
+                this.time = 0;
+                return;
+              } 
+             this.time -= time;
+          } else {
+            System.out.println("fail: too old to drive");
+          }
         } else {
-            System.out.println("erro");
+          System.out.println("fail: empty motorcycle");
         }
+      } else {
+        System.out.println("fail: buy time first");
+      }
     }
 
     // buzinar
     public void honk() {
-        System.out.println("P");
-          for(int i = 0; i <= this.power; i++){
-              System.out.println("e");
+        String pem = "P";
+          for(int i = 0; i < this.power; i++){
+              pem += "e";
           }
-        System.out.println("m");
+      pem += "m";
+      System.out.println(pem);
     }
 
     public String toString() {
