@@ -7,46 +7,48 @@ public class Car {
 
     public Car() {
         this.passMax = 2;
-        this.gasMax = 100;  
+        this.gasMax = 100;
     }
+
     Car(int pass, int gas) {
         this.pass = pass;
         passMax = 100;
         this.gas = gas;
         gasMax = 100;
     }
+
     public String toString() {
         return "pass: " + this.pass + ", " + "gas: " + this.gas + ", " + "km: " + this.km;
     }
 
     public void enter() {
-        if(pass < passMax) {
+        if (pass < passMax) {
             pass++;
-        }else{
+        } else {
             System.out.println("fail: limite de pessoas atingido");
         }
     }
-    
+
     public void leave() {
-        if(pass > 0){   
+        if (pass > 0) {
             pass--;
-        }else{
+        } else {
             System.out.println("fail: nao ha ninguem no carro");
         }
     }
 
     public void fuel(int gas) {
         this.gas += gas;
-        if(this.gas > this.gasMax) {
+        if (this.gas > this.gasMax) {
             this.gas = this.gasMax;
         }
     }
-    
+
     public void drive(int km) {
-        if(pass > 0 ){
-            if(this.gas == 0) {
+        if (pass > 0) {
+            if (this.gas == 0) {
                 System.out.println("fail: tanque vazio");
-            } else if(km <= this.gas) {
+            } else if (km <= this.gas) {
                 this.km += km;
                 this.gas -= km;
             } else {

@@ -1,7 +1,18 @@
+/*
+O que fez?
+    -
+Com quem fez?
+    -
+O que aprendeu?
+    -
+Quanto tempo levou?
+    -
+*/
+
 import java.util.*;
 
-public class Main{
-    public static void main(String[] arg){
+public class Solver {
+    public static void main(String[] arg) {
         Calculator cal = null;
 
         while (true) {
@@ -20,7 +31,7 @@ public class Main{
                 cal.chargeBattery((int) number(args[1]));
             } else if (args[0].equals("sum")) {
                 cal.sum((int) number((args[1])), (int) number(args[2]));
-            } else if (args[0].equals("div")) { 
+            } else if (args[0].equals("div")) {
                 cal.division((int) number(args[1]), (int) number(args[2]));
             } else {
                 write("fail: comando invalido");

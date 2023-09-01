@@ -15,7 +15,7 @@ class Person {
         return this.age;
     }
 
-    public String toString(){
+    public String toString() {
         return name + ":" + age;
     }
 }

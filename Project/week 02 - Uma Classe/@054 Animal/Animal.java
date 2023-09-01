@@ -18,7 +18,7 @@ class Animal {
         }
         return this.barulho;
     }
-    
+
     public void envelhecer(int nivel) {
         estagio += nivel;
         if (estagio >= 4) {

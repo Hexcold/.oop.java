@@ -45,6 +45,7 @@ class Calculator {
 
         // se seu java estiver utilizando `,` como separador decimal, use:
         // DecimalFormat df = new DecimalFormat("0.00");
-        // return String.format("display = %s, battery = %d", df.format(this.display), this.battery);
+        // return String.format("display = %s, battery = %d", df.format(this.display),
+        // this.battery);
     }
 }

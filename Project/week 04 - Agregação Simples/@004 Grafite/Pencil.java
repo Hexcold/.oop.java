@@ -16,15 +16,15 @@ class Pencil {
     }
 
     public boolean hasGrafite() {
-        if(this.tip != null){
+        if (this.tip != null) {
             return true;
         }
         return false;
     }
 
     public boolean insert(Lead grafite) {
-        if(this.tip == null){
-            if(grafite.getThickness() == this.thickness) {
+        if (this.tip == null) {
+            if (grafite.getThickness() == this.thickness) {
                 this.tip = grafite;
                 return true;
             }
@@ -36,7 +36,7 @@ class Pencil {
     }
 
     public Lead remove() {
-        if(this.tip != null){
+        if (this.tip != null) {
             this.tip = null;
             return this.tip;
         }
@@ -44,19 +44,19 @@ class Pencil {
     }
 
     public void writePage() {
-        if(this.tip == null){
+        if (this.tip == null) {
             System.out.println("fail: nao existe grafite");
             return;
         }
 
-        if(this.tip.getSize() > 10){
-            if(tip.getSize() - tip.usagePerSheet() < 10){
+        if (this.tip.getSize() > 10) {
+            if (tip.getSize() - tip.usagePerSheet() < 10) {
                 tip.setSize(10);
                 System.out.println("fail: folha incompleta");
                 return;
             }
             tip.setSize(tip.getSize() - tip.usagePerSheet());
-        }else{
+        } else {
             System.out.println("fail: tamanho insuficiente");
         }
 

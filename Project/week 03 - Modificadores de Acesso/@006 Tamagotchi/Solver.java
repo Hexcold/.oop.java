@@ -1,6 +1,17 @@
+/*
+O que fez?
+    -
+Com quem fez?
+    -
+O que aprendeu?
+    -
+Quanto tempo levou?
+    -
+*/
+
 import java.util.*;
 
-public class Main {
+public class Solver {
     public static void main(String[] a) {
         Pet pet = new Pet(0, 0, 0);
 

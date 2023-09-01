@@ -9,13 +9,13 @@ class Pet {
         this.energy = energy;
         this.hungry = hungry;
         this.clean = clean;
-      this.cleanMax = clean;
-      this.energyMax = energy;
-      this.hungryMax = hungry;
-      this.diamonds = 0;
-      this.age = 0;
-      this.alive = true;
-      
+        this.cleanMax = clean;
+        this.energyMax = energy;
+        this.hungryMax = hungry;
+        this.diamonds = 0;
+        this.age = 0;
+        this.alive = true;
+
     }
 
     void setEnergy(int value) {
@@ -33,20 +33,20 @@ class Pet {
     }
 
     public void setHungry(int value) {
-        if(value <= 0) {
-        this.hungry = 0;
-        System.out.println("fail: pet morreu de fome");
-        this.alive = false;
+        if (value <= 0) {
+            this.hungry = 0;
+            System.out.println("fail: pet morreu de fome");
+            this.alive = false;
         }
         if (value > this.hungryMax) {
-        this.hungry = this.hungryMax;
-        return;
+            this.hungry = this.hungryMax;
+            return;
         }
         this.hungry = value;
     }
 
     void setClean(int value) {
-        if(value <= 0) {
+        if (value <= 0) {
             System.out.println("fail: pet morreu de sujeira");
             this.alive = false;
         }
@@ -58,11 +58,11 @@ class Pet {
     }
 
     private boolean testAlive() {
-        if(this.alive) {
+        if (this.alive) {
             return true;
         } else {
-        System.out.println("fail: pet esta morto");
-        return false;
+            System.out.println("fail: pet esta morto");
+            return false;
         }
     }
 
@@ -76,8 +76,8 @@ class Pet {
     }
 
     public void play() {
-        if (!testAlive()){
-          return;
+        if (!testAlive()) {
+            return;
         }
         setEnergy(getEnergy() - 2);
         setHungry(getHungry() - 1);
@@ -88,7 +88,7 @@ class Pet {
 
     public void shower() {
         if (!testAlive()) {
-          return;
+            return;
         }
         setEnergy(getEnergy() - 3);
         setHungry(getHungry() - 1);
@@ -98,7 +98,7 @@ class Pet {
 
     public void eat() {
         if (!testAlive()) {
-          return;
+            return;
         }
         setEnergy(getEnergy() - 1);
         setHungry(getHungry() + 4);
@@ -107,8 +107,8 @@ class Pet {
     }
 
     public void sleep() {
-        if(testAlive()){
-            if(this.energy > 16) {
+        if (testAlive()) {
+            if (this.energy > 16) {
                 System.out.println("fail: nao esta com sono");
             } else {
                 this.age += energyMax - energy;

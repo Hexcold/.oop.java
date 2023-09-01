@@ -1,3 +1,14 @@
+/*
+O que fez?
+    Fiz tudo e passou em todos os testes
+Com quem fez?
+    Fiz a maior parte sozinho. Mas tive ajuda do Joasi, para entender o método “drive” (Era apenas a ordem  dos if)
+O que aprendeu?
+    prendi um pouco mais referente a interação entre duas classes, ademais
+Quanto tempo levou?
+    2 hora (não sei exatamente, isso é uma especulação )
+*/
+
 import java.util.*;
 
 class Solver {

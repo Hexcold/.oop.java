@@ -1,3 +1,14 @@
+/*
+O que fez?
+    -
+Com quem fez?
+    -
+O que aprendeu?
+    -
+Quanto tempo levou?
+    -
+*/
+
 import java.util.*;
 
 public class Solver {
@@ -27,7 +38,16 @@ public class Solver {
     }
 
     static Scanner scanner = new Scanner(System.in);
-    public static String input()           { return scanner.nextLine();    }
-    public static void write(String value) { System.out.println(value);    }
-    public static double number(String str)   { return Double.parseDouble(str); }
+
+    public static String input() {
+        return scanner.nextLine();
+    }
+
+    public static void write(String value) {
+        System.out.println(value);
+    }
+
+    public static double number(String str) {
+        return Double.parseDouble(str);
+    }
 }

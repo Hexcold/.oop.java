@@ -1,9 +1,9 @@
-    import java.text.DecimalFormat;
+import java.text.DecimalFormat;
 
 class Lead {
-    private float thickness; //calibre
-    private String hardness; //dureza
-    private int size; //tamanho em mm
+    private float thickness; // calibre
+    private String hardness; // dureza
+    private int size; // tamanho em mm
 
     public Lead(float thickness, String hardness, int size) {
         this.thickness = thickness;
@@ -28,11 +28,11 @@ class Lead {
     }
 
     public int usagePerSheet() {
-        if(hardness.equals("HB"))
+        if (hardness.equals("HB"))
             return 1;
-        else if(hardness.equals("2B"))
+        else if (hardness.equals("2B"))
             return 2;
-        else if(hardness.equals("4B"))
+        else if (hardness.equals("4B"))
             return 4;
         else
             return 6;

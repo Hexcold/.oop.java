@@ -1,3 +1,14 @@
+/*
+O que fez?
+    -
+Com quem fez?
+    -
+O que aprendeu?
+    -
+Quanto tempo levou?
+    -
+*/
+
 import java.util.*;
 
 public class Solver {
@@ -12,7 +23,7 @@ public class Solver {
             if (args[0].equals("end")) {
                 break;
             } else if (args[0].equals("show")) {
-                System.out.println(car);    
+                System.out.println(car);
             } else if (args[0].equals("enter")) {
                 car.enter();
             } else if (args[0].equals("leave")) {
