@@ -19,7 +19,7 @@ class Calculator {
 
     public boolean useBattery() {
         if (this.battery == 0) {
-            System.out.println("fail: bateria insuficiente");
+            Solver.write("fail: bateria insuficiente");
             return false;
         }
         this.battery -= 1;
@@ -35,7 +35,7 @@ class Calculator {
         if (!useBattery())
             return;
         if (den == 0) {
-            System.out.println("fail: divisao por zero");
+            Solver.write("fail: divisao por zero");
         } else
             this.display = (float) num / den;
     }
