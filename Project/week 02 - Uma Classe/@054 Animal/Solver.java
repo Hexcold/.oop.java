@@ -1,12 +1,12 @@
 /*
 O que fez?
-    -
+    - Fiz tudo e passou em todos os testes.
 Com quem fez?
-    -
+    - Fiz sozinho
 O que aprendeu?
-    -
+    - Mais prática, visto que a guide já veio praticamente pronta, acabei tendo o trabalho apenas de modificação de pequenas coisas
 Quanto tempo levou?
-    -
+    - 1 hora (não sei exatamente, isso é uma especulação)
 */
 
 import java.util.*;
@@ -21,18 +21,24 @@ public class Solver {
             var args = line.split(" ");
             write("$" + line);
 
-            if (args[0].equals("init")) {
-                animal = new Animal(args[1], args[2]);
-            } else if (args[0].equals("grow")) {
-                animal.envelhecer((int) number(args[1]));
-            } else if (args[0].equals("noise")) {
-                write(animal.fazerBarulho());
-            } else if (args[0].equals("show")) {
-                write(animal.toString());
-            } else if (args[0].equals("end")) {
-                break;
-            } else {
-                write("fail: comando invalido");
+            switch (args[0]){
+                case "end":
+                    return;
+                case "init":
+                    animal = new Animal(args [1], args[2]);
+                    break;
+                case "grow":
+                    animal.envelhecer((int) number(args[1]));
+                    break;
+                case "noise":
+                    write(animal.fazerBarulho());
+                    break;
+                case "show":
+                    write(animal.toString());
+                    break;
+                default:
+                    write("fail: comando invalido");
+                    break;
             }
         }
     }
