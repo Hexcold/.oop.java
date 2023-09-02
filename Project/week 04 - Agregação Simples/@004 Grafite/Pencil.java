@@ -28,9 +28,9 @@ class Pencil {
                 this.tip = grafite;
                 return true;
             }
-            System.out.println("fail: calibre incompativel");
+            Solver.write("fail: calibre incompativel");
         } else {
-            System.out.println("fail: ja existe grafite");
+            Solver.write("fail: ja existe grafite");
         }
         return false;
     }
@@ -45,19 +45,19 @@ class Pencil {
 
     public void writePage() {
         if (this.tip == null) {
-            System.out.println("fail: nao existe grafite");
+            Solver.write("fail: nao existe grafite");
             return;
         }
 
         if (this.tip.getSize() > 10) {
             if (tip.getSize() - tip.usagePerSheet() < 10) {
                 tip.setSize(10);
-                System.out.println("fail: folha incompleta");
+                Solver.write("fail: folha incompleta");
                 return;
             }
             tip.setSize(tip.getSize() - tip.usagePerSheet());
         } else {
-            System.out.println("fail: tamanho insuficiente");
+            Solver.write("fail: tamanho insuficiente");
         }
 
     }
