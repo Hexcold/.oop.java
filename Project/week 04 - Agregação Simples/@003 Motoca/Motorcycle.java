@@ -34,7 +34,7 @@ class Motorcycle {
       this.person = person;
       return true;
     }
-    System.out.println("fail: busy motorcycle");
+    Solver.write("fail: busy motorcycle");
     return false;
   }
 
@@ -44,7 +44,7 @@ class Motorcycle {
       this.person = null;
       return null;
     }
-    System.out.println("fail: empty motorcycle");
+    Solver.write("fail: empty motorcycle");
     return null;
   }
 
@@ -53,19 +53,19 @@ class Motorcycle {
       if (person != null) {
         if (person.getAge() <= 10) {
           if (this.time < time) {
-            System.out.println("fail: time finished after " + this.time + " minutes");
+            Solver.write("fail: time finished after " + this.time + " minutes");
             this.time = 0;
             return;
           }
           this.time -= time;
         } else {
-          System.out.println("fail: too old to drive");
+          Solver.write("fail: too old to drive");
         }
       } else {
-        System.out.println("fail: empty motorcycle");
+        Solver.write("fail: empty motorcycle");
       }
     } else {
-      System.out.println("fail: buy time first");
+      Solver.write("fail: buy time first");
     }
   }
 

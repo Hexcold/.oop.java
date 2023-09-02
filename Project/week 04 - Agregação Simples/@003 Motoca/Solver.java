@@ -2,7 +2,7 @@
 O que fez?
     Fiz tudo e passou em todos os testes
 Com quem fez?
-    Fiz a maior parte sozinho. Mas tive ajuda do Joasi, para entender o método “drive” (Era apenas a ordem  dos if)
+    Fiz a maior parte sozinho. Mas tive ajuda do Joasi, para entender o método “drive” (Era apenas a ordem  dos if). E o Josias me explicou que dava para retornar uma metodo de outra class no toString
 O que aprendeu?
     prendi um pouco mais referente a interação entre duas classes, ademais
 Quanto tempo levou?
@@ -20,29 +20,39 @@ class Solver {
             args = line.split(" ");
             write('$' + line);
 
-            if (args[0].equals("show")) {
-                System.out.println(motoca);
-            } else if (args[0].equals("init")) {
-                motoca = new Motorcycle(number(args[1]));
-            } else if (args[0].equals("buy")) {
-                motoca.buy(number(args[1]));
-            } else if (args[0].equals("drive")) {
-                motoca.drive(number(args[1]));
-            } else if (args[0].equals("enter")) {
-                motoca.enter(new Person(args[1], number(args[2])));
-            } else if (args[0].equals("honk")) {
-                motoca.honk();
-            } else if (args[0].equals("leave")) {
-                Person person = motoca.leave();
-                if (person != null) {
-                    System.out.println(person.toString());
-                }
-            } else if (args[0].equals("end")) {
-                break;
-            } else
-                System.out.println("fail: comando invalido");
+            switch (args[0]){
+                case "end":
+                    return;
+                case "show":
+                    System.out.println(motoca);
+                    break;
+                case "init":
+                    motoca = new Motorcycle(number(args[1]));
+                    break;
+                case "buy":
+                    motoca.buy(number(args[1]));
+                    break;
+                case "drive":
+                    motoca.drive(number(args[1]));
+                    break;
+                case "enter":
+                    motoca.enter(new Person(args[1], number(args[2])));
+                    break;
+                case "honk":
+                    motoca.honk();
+                    break;
+                case "leave":
+                    Person person = motoca.leave();
+                    if (person != null) {
+                        System.out.println(person.toString());
+                        break;
+                    }
+                    break;
+                default:
+                    write("fail: comando invalido");
+                    break;
+            }
         }
-        scanner.close();
     }
 
     static Scanner scanner = new Scanner(System.in);
