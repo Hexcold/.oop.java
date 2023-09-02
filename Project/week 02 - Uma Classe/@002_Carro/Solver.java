@@ -1,12 +1,12 @@
 /*
 O que fez?
-    -
+    - Fiz tudo e passou em todos os testes.
 Com quem fez?
-    -
+    -Fiz sozinho
 O que aprendeu?
-    -
+    - Aprendi melhor sobre a comunicação dos parâmetros e as variáveis com this. Além do funcionamento do shell
 Quanto tempo levou?
-    -
+    - 2 horas (não sei exatamente, isso é uma especulação)
 */
 
 import java.util.*;
@@ -20,20 +20,27 @@ public class Solver {
             write("$" + line);
             var args = line.split(" ");
 
-            if (args[0].equals("end")) {
-                break;
-            } else if (args[0].equals("show")) {
-                System.out.println(car);
-            } else if (args[0].equals("enter")) {
-                car.enter();
-            } else if (args[0].equals("leave")) {
-                car.leave();
-            } else if (args[0].equals("drive")) {
-                car.drive((int) number(args[1]));
-            } else if (args[0].equals("fuel")) {
-                car.fuel((int) number(args[1]));
-            } else {
-                write("fail: comando invalido");
+            switch (args[0]){
+                case "end":
+                    return;
+                case "show":
+                    System.out.println(car);
+                    break;
+                case "enter":
+                    car.enter();
+                    break;
+                case "leave":
+                    car.leave();
+                    break;
+                case "drive":
+                    car.drive((int) number(args[1]));
+                    break;
+                case "fuel":
+                    car.fuel((int) number(args[1]));
+                    break;
+                default:
+                    write("fail: comando invalido");
+                    break;
             }
         }
     }
@@ -48,7 +55,7 @@ public class Solver {
         return Double.parseDouble(value);
     }
 
-    private static void write(String value) {
+    static void write(String value) {
         System.out.println(value);
     }
 }

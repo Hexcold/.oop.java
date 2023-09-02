@@ -25,7 +25,7 @@ public class Car {
         if (pass < passMax) {
             pass++;
         } else {
-            System.out.println("fail: limite de pessoas atingido");
+            Solver.write("fail: limite de pessoas atingido");
         }
     }
 
@@ -33,7 +33,7 @@ public class Car {
         if (pass > 0) {
             pass--;
         } else {
-            System.out.println("fail: nao ha ninguem no carro");
+            Solver.write("fail: nao ha ninguem no carro");
         }
     }
 
@@ -47,17 +47,17 @@ public class Car {
     public void drive(int km) {
         if (pass > 0) {
             if (this.gas == 0) {
-                System.out.println("fail: tanque vazio");
+                Solver.write("fail: tanque vazio");
             } else if (km <= this.gas) {
                 this.km += km;
                 this.gas -= km;
             } else {
-                System.out.println("fail: tanque vazio apos andar " + this.gas + " km");
+                Solver.write("fail: tanque vazio apos andar " + this.gas + " km");
                 this.km += this.gas;
                 this.gas = 0;
             }
         } else {
-            System.out.println("fail: nao ha ninguem no carro");
+            Solver.write("fail: nao ha ninguem no carro");
         }
     }
 }
