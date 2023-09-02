@@ -21,7 +21,7 @@ class Pet {
     void setEnergy(int value) {
         if (value <= 0) {
             this.energy = 0;
-            System.out.println("fail: pet morreu de fraqueza");
+            Solver.write("fail: pet morreu de fraqueza");
             this.alive = false;
             return;
         }
@@ -35,7 +35,7 @@ class Pet {
     public void setHungry(int value) {
         if (value <= 0) {
             this.hungry = 0;
-            System.out.println("fail: pet morreu de fome");
+            Solver.write("fail: pet morreu de fome");
             this.alive = false;
         }
         if (value > this.hungryMax) {
@@ -47,7 +47,7 @@ class Pet {
 
     void setClean(int value) {
         if (value <= 0) {
-            System.out.println("fail: pet morreu de sujeira");
+            Solver.write("fail: pet morreu de sujeira");
             this.alive = false;
         }
         if (value > this.cleanMax) {
@@ -61,7 +61,7 @@ class Pet {
         if (this.alive) {
             return true;
         } else {
-            System.out.println("fail: pet esta morto");
+            Solver.write("fail: pet esta morto");
             return false;
         }
     }
@@ -109,7 +109,7 @@ class Pet {
     public void sleep() {
         if (testAlive()) {
             if (this.energy > 16) {
-                System.out.println("fail: nao esta com sono");
+                Solver.write("fail: nao esta com sono");
             } else {
                 this.age += energyMax - energy;
                 setEnergy(getEnergyMax());

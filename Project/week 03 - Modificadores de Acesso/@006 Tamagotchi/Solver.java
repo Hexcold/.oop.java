@@ -1,12 +1,12 @@
 /*
 O que fez?
-    -
+    - Fiz tudo e passou em todos os testes
 Com quem fez?
-    -
+    - Tive a ajuda do Josias para entender que deveria inicializar até mesmo as variáveis máximas no construtor (fora que demorei para me tocar que deveria inicializar a variável booleana, acreditava que ela já vinha como true). Além da ajuda do Carlos para perceber um erro que estava cometendo nos métodos do tipo booleano.
 O que aprendeu?
-    -
+    - Aprendi que devo inicializar até as variáveis do tipo booleano. E aprendi um pouco mais o funcionamento dos get e set (principalmente quando usados juntos).
 Quanto tempo levou?
-    -
+    - 4 horas (não sei exatamente, isso é uma especulação)
 */
 
 import java.util.*;
@@ -20,22 +20,29 @@ public class Solver {
             write("$" + line);
             var args = line.split(" ");
 
-            if (args[0].equals("end")) {
-                break;
-            } else if (args[0].equals("show")) {
-                write(pet.toString());
-            } else if (args[0].equals("init")) {
-                pet = new Pet((int) number(args[1]), (int) number(args[2]), (int) number(args[3]));
-            } else if (args[0].equals("play")) {
-                pet.play();
-            } else if (args[0].equals("eat")) {
-                pet.eat();
-            } else if (args[0].equals("sleep")) {
-                pet.sleep();
-            } else if (args[0].equals("shower")) {
-                pet.shower();
-            } else {
-                write("fail: comando invalido");
+            switch (args[0]){
+                case "end":
+                    return;
+                case "show":
+                    write((pet.toString()));
+                    break;
+                case "init":
+                    pet = new Pet((int) number(args[1]), (int) number(args[2]), (int) number(args[3]));
+                    break;
+                case "play":
+                    pet.play();
+                    break;
+                case "eat":
+                    pet.eat();
+                    break;
+                case "sleep":
+                    pet.sleep();
+                    break;
+                case "shower":
+                    pet.shower();
+                    break;
+                default:
+                    write("fail: comando invalido");
             }
         }
     }
@@ -50,7 +57,7 @@ public class Solver {
         return Double.parseDouble(value);
     }
 
-    private static void write(String value) {
+    static void write(String value) {
         System.out.println(value);
     }
 }
