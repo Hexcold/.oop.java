@@ -11,7 +11,7 @@ class Time {
 
     public void setHour(int hour) {
         if (hour < 0 || hour > 23) {
-            System.out.println("fail: hora invalida");
+            Solver.write("fail: hora invalida");
         } else {
             this.hour = hour;
         }
@@ -19,7 +19,7 @@ class Time {
 
     public void setMinute(int minute) {
         if (minute < 0 || minute > 59) {
-            System.out.println("fail: minuto invalido");
+            Solver.write("fail: minuto invalido");
         } else {
             this.minute = minute;
         }
@@ -27,7 +27,7 @@ class Time {
 
     public void setSecond(int second) {
         if (second < 0 || second > 59) {
-            System.out.println("fail: segundo invalido");
+            Solver.write("fail: segundo invalido");
         } else {
             this.second = second;
         }
