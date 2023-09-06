@@ -1,12 +1,12 @@
 /*
 O que fez?
-    -
+    - Fiz tudo e passou em todos os testes
 Com quem fez?
-    -
+    - Fiz sozinho
 O que aprendeu?
-    -
+    - Aprendi melhor sobre a sintaxe do Java
 Quanto tempo levou?
-    -
+    - 1 hora (isso é uma estimativa)
 */
 
 import java.util.Scanner;

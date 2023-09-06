@@ -15,7 +15,7 @@ public class Solver {
     public static void main(String[] args) {
         Pencil lap = new Pencil(0.5f);
 
-        while (true) {
+        while (true) {  
             String line = input();
             String[] argsL = line.split(" ");
             write('$' + line);
