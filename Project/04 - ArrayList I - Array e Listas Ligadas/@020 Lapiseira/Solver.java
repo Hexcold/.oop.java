@@ -1,42 +1,58 @@
-import java.text.DecimalFormat;
 import java.util.Scanner;
-import java.util.ArrayList;
 
-//!KEEP
-public class Solver{
+public class Solver {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Pencil lapiseira = new Pencil(0.5f);
-        while(true) {
+        while (true) {
             String line = scanner.nextLine();
             System.out.println("$" + line);
-            String ui[] = line.split(" ");
-            if(ui[0].equals("end")) {
-                break;
-            } else if(ui[0].equals("help")) {
-                System.out.println("init _calibre; insert _calibre _dureza _tamanho; remove; writePage _folhas");
-            } else if(ui[0].equals("init")) { //thickness
-                lapiseira = new Pencil(Float.parseFloat(ui[1]));
-            } else if(ui[0].equals("insert")) {//thickness hardness size
-                float thickness = Float.parseFloat(ui[1]);
-                String hardness  = ui[2];
-                int size = Integer.parseInt(ui[3]);
-                lapiseira.insert(new Lead(thickness, hardness, size));
-            } else if(ui[0].equals("remove")) {
-                lapiseira.remove();
-            } else if(ui[0].equals("show")) {
-                System.out.println(lapiseira);
-            } else if (ui[0].equals("write")) {
-                lapiseira.writePage();
-            } else if (ui[0].equals("pull")) {
-                lapiseira.pull();
-            }  else {
-                System.out.println("fail: comando invalido");
+            String arg[] = line.split(" ");
+
+            switch (arg[0]) {
+                case "end":
+                    return;
+
+                case "help":
+                    write("init _calibre; insert _calibre _dureza _tamanho; remove; writePage _folhas");
+                    break;
+                
+                case "init":
+                    lapiseira = new Pencil(Float.parseFloat(arg[1]));
+                    break;
+
+                case "insert":
+                    float thickness = Float.parseFloat(arg[1]);
+                    String hardness = arg[2];
+                    int size = Integer.parseInt(arg[3]);
+                    lapiseira.insert(new Lead(thickness, hardness, size));
+                    break;
+
+                case "remove":
+                    lapiseira.remove();
+                    break;
+
+                case "show":
+                    System.out.println(lapiseira);
+                    break;
+
+                case "write":
+                    lapiseira.writePage();
+                    break;
+                
+                case "pull":
+                    lapiseira.pull();
+                    break;
+
+                default:
+                    write("fail: comando invalido");
+                    break;
             }
+
         }
-        scanner.close();
+    }
+
+    public static void write(String value) {
+        System.out.println(value);
     }
 }
-
-
-//!OFF
