@@ -1,223 +1,83 @@
-# POO-JAVA!!!
+</p align="center">
+<img src="https://github.com/Hexcold/Hexcold/blob/main/assets/banner.png" />
+<p align="center">
+<div>
+  <h1 align="center">
+    Hi, Jovens!!! Eu sou o 
+    <a href="">Henrique Pires (Hex) 😃️</a><br>
+    
+ <img src="https://badges.pufler.dev/visits/hexcold/hexcold"/> 
+ <!-- <img src="https://badges.pufler.dev/years/ritik307"/> -->
+ <img src="https://badges.pufler.dev/repos/hexcold"/>
+ <img src="https://badges.pufler.dev/commits/monthly/hexcold" />
 
-![Cover](/assets/cover.svg)
+  </h2>
 
-## INFOR
+</div><br>
 
-- 
+<h2 align="center">Social network</h2>
+<div align="center" class="social">
 
--
+  <a href="https://www.instagram.com/henrq.p/" target="_blank"><img src="https://cdn.icon-icons.com/icons2/836/PNG/96/Instagram_icon-icons.com_66804.png" target="_blank" width="50" height="50"></a>⠀
+  <a href="https://www.linkedin.com/in/henrique-lima-pires-b4a1361a8/" target="_blank"><img src="https://cdn.icon-icons.com/icons2/99/PNG/96/linkedin_socialnetwork_17441.png" target="_blank" width="50" height="50"></a>⠀
+  <a href="mailto:henriquepiresh3@gmail.com"><img src="https://cdn.icon-icons.com/icons2/2631/PNG/96/gmail_new_logo_icon_159149.png" target="_blank" width="50" height="50"></a>
 
--
+  <!--  <a href="https://discord.com/368752905496297482" target="_blank"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" target="_blank"><a> -->
 
-<br>
 
-***
+</div><br>
 
-![Cover ](/assets/drift.svg)
+<h2 align="center">Technology</h2>
+
+<div align="center" class="tec">
+<p align="center">
+ <img src="https://cdn.icon-icons.com/icons2/2107/PNG/96/file_type_html_icon_130541.png" width="50" height="50"/>
+<img src="https://cdn.icon-icons.com/icons2/2107/PNG/96/file_type_css_icon_130661.png" width="50" height="50"/>
+<img src="https://cdn.icon-icons.com/icons2/2415/PNG/96/c_original_logo_icon_146611.png" width="50" height="50"/>
+<img src="https://cdn-icons-png.flaticon.com/128/6132/6132222.png" width="50" height="50"/>
+<img src="https://cdn.icon-icons.com/icons2/2415/PNG/96/java_original_logo_icon_146458.png" width="50" height="50"/>
+<img src="https://cdn.icon-icons.com/icons2/2107/PNG/96/file_type_git_icon_130581.png" width="50" height="50"/>
+<img src="https://cdn.icon-icons.com/icons2/936/PNG/96/github-logo_icon-icons.com_73546.png" width="50" height="50"/>
+</p>
+
+</div><br>
+
+<h2 align="center">Snake</h2>
+
+<div align="center">
+
+  ![Snake animation](https://github.com/Hexcold/Hexcold/blob/output/github-contribution-grid-snake.svg)
+  
+</div>
+
+<h2 align="center">Github Stats</h2>
+
+<p align = "center"> 
+  <img  src = "https://github-readme-stats.vercel.app/api?username=hexcold&show_icons=true&theme=radical&line_height=27">
+</P>
+
+<p align = "center">
+  <img src = "https://github-readme-stats.vercel.app/api/top-langs/?username=hexcold&hide=html,css,java,shaderlab,kotlin,hlsl&theme=radical">
+</p>
+
+<p align = "center">
+ <img  src="https://github-readme-streak-stats.herokuapp.com/?user=hexcold&show_icons=true&locale=en&layout=compact&theme=radical&line_height=0" />
+</p> 
 
 <hr>
 
-### 00 : Registro FUP   
-
-- <a href="https://github.com/Hexcold/.oop.java/tree/main/Project/00%20-%20Registros%20Fup%20%3D%20OP/Impressao">[rec] Impressao</a>
-- <a href="https://github.com/Hexcold/.oop.java/tree/main/Project/00%20-%20Registros%20Fup%20%3D%20OP/NovaMedia">[rec] Nova Media</a>
-- <a href="https://github.com/Hexcold/.oop.java/tree/main/Project/00%20-%20Registros%20Fup%20%3D%20OP/Quantos%20est%C3%A3o%20dentro">[rec] Quantos estao dentro</a>
-
-<br>
-
-<img src="https://cdn-icons-png.flaticon.com/128/1255/1255768.png" target="_blank" width="50" height="50">-----
-<img src="https://cdn-icons-png.flaticon.com/128/1022/1022900.png" target="_blank" width="50" height="50">
-
-
-##
-
-### 01 : Uma Classe 
-
-- <a href="https://github.com/Hexcold/.oop.java/tree/main/Project/01%20-%20Uma%20Classe/%40001%20Calculadora">@001 Calculadora</a>
-- <a href="https://github.com/Hexcold/.oop.java/tree/main/Project/01%20-%20Uma%20Classe/%40002_Carro">@002 Carro</a>
-- <a href="https://github.com/Hexcold/.oop.java/tree/main/Project/01%20-%20Uma%20Classe/%40054%20Animal">@054 Animal</a>
-
-<br>
-
-<img src="https://cdn-icons-png.flaticon.com/128/1255/1255768.png" target="_blank" width="50" height="50">----------
-<img src="https://cdn-icons-png.flaticon.com/128/1022/1022900.png" target="_blank" width="50" height="50">
-
-##
-
-### 02 : Modificadores de Acesso
-
-- <a href="https://github.com/Hexcold/.oop.java/tree/main/Project/02%20-%20Modificadores%20de%20Acesso/%40006%20Tamagotchi">@006 Tamagotchi</a>
-- <a href="https://github.com/Hexcold/.oop.java/tree/main/Project/02%20-%20Modificadores%20de%20Acesso/%40036%20Rel%C3%B3gio">@002 Relogio</a>
-
-<br>
-
-<img src="https://cdn-icons-png.flaticon.com/128/1255/1255768.png" target="_blank" width="50" height="50">---------------
-<img src="https://cdn-icons-png.flaticon.com/128/1022/1022900.png" target="_blank" width="50" height="50">
-
-##
-
-### 03 : Agregação Simples
-
-- <a href="https://github.com/Hexcold/.oop.java/tree/main/Project/03%20-%20Agrega%C3%A7%C3%A3o%20Simples/%40003%20Motoca">@003 Motoca</a>
-- <a href="https://github.com/Hexcold/.oop.java/tree/main/Project/03%20-%20Agrega%C3%A7%C3%A3o%20Simples/%40004%20Grafite">@004 Grafite</a>
-
-<br>
-
-<img src="https://cdn-icons-png.flaticon.com/128/1255/1255768.png" target="_blank" width="50" height="50">--------------------
-<img src="https://cdn-icons-png.flaticon.com/128/1022/1022900.png" target="_blank" width="50" height="50">
-
-##
-
-### 04 : ArrayList I - Arrays e Listas Ligadas
-
--
-
--
-
-<br>
-
-<img src="https://cdn-icons-png.flaticon.com/128/1255/1255768.png" target="_blank" width="50" height="50">-------------------------
-<img src="https://cdn-icons-png.flaticon.com/128/1022/1022900.png" target="_blank" width="50" height="50">
-
-##
-
-### 05 : ArrayList II - Array de tamanho fixo
-
-- 
-
-- 
-
-<br>
-
-<img src="https://cdn-icons-png.flaticon.com/128/1255/1255768.png" target="_blank" width="50" height="50">------------------------------
-<img src="https://cdn-icons-png.flaticon.com/128/1022/1022900.png" target="_blank" width="50" height="50">
-
-
-##
-
-### 06 : ArrayList III - Extra
-
--
-
--
-
-<br>
-
-<img src="https://cdn-icons-png.flaticon.com/128/1255/1255768.png" target="_blank" width="50" height="50">-----------------------------------
-<img src="https://cdn-icons-png.flaticon.com/128/1022/1022900.png" target="_blank" width="50" height="50">
-
-
-##
-
-### 07 : Troca de dados e ordenação
-
--
-
--
-
-<br>
-
-<img src="https://cdn-icons-png.flaticon.com/128/1255/1255768.png" target="_blank" width="50" height="50">----------------------------------------
-<img src="https://cdn-icons-png.flaticon.com/128/1022/1022900.png" target="_blank" width="50" height="50">
-
-##
-
-### 08 : Excessões
-
--
-
--
-
-<br>
-
-<img src="https://cdn-icons-png.flaticon.com/128/1255/1255768.png" target="_blank" width="50" height="50">---------------------------------------------
-<img src="https://cdn-icons-png.flaticon.com/128/1022/1022900.png" target="_blank" width="50" height="50">
-
-##
-
-### 09 : Mapas
-
--
-
--
-
-<br>
-
-<img src="https://cdn-icons-png.flaticon.com/128/1255/1255768.png" target="_blank" width="50" height="50">--------------------------------------------------
-<img src="https://cdn-icons-png.flaticon.com/128/1022/1022900.png" target="_blank" width="50" height="50">
-
-##
-
-### 10 : Herança I
-
--
-
--
-
-<br>
-
-<img src="https://cdn-icons-png.flaticon.com/128/1255/1255768.png" target="_blank" width="50" height="50">-------------------------------------------------------
-<img src="https://cdn-icons-png.flaticon.com/128/1022/1022900.png" target="_blank" width="50" height="50">
-
-##
-
-### 11 : Lógica I
-
--
-
--
-
-<br>
-
-<img src="https://cdn-icons-png.flaticon.com/128/1255/1255768.png" target="_blank" width="50" height="50">------------------------------------------------------------
-<img src="https://cdn-icons-png.flaticon.com/128/1022/1022900.png" target="_blank" width="50" height="50">
-
-##
-
-### 12 : Herança II
-
--
-
--
-
-<br>
-
-<img src="https://cdn-icons-png.flaticon.com/128/1255/1255768.png" target="_blank" width="50" height="50">-----------------------------------------------------------------
-<img src="https://cdn-icons-png.flaticon.com/128/1022/1022900.png" target="_blank" width="50" height="50">
-
-##
-
-### 13 : Lógica II
-
--
-
--
-
-<br>
-
-<img src="https://cdn-icons-png.flaticon.com/128/1255/1255768.png" target="_blank" width="50" height="50">----------------------------------------------------------------------
-<img src="https://cdn-icons-png.flaticon.com/128/1022/1022900.png" target="_blank" width="50" height="50">
-
-##
-
-### 13 : Herança III
-
--
-
--
-
-<br>
-
-<img src="https://cdn-icons-png.flaticon.com/128/1255/1255768.png" target="_blank" width="50" height="50">---------------------------------------------------------------------------
-<img src="https://cdn-icons-png.flaticon.com/128/1022/1022900.png" target="_blank" width="50" height="50">
-<img src="https://cdn-icons-png.flaticon.com/128/1894/1894428.png" target="_blank" width="40" height="40">
-
-<!--
- 
-<img src="https://cdn-icons-png.flaticon.com/128/1255/1255768.png" target="_blank" width="100" height="100"> 
-<img src="https://cdn-icons-png.flaticon.com/128/1022/1022900.png" target="_blank" width="100" height="100">
-<img src="https://cdn-icons-png.flaticon.com/128/1894/1894428.png" target="_blank" width="100" height="100">
-<img src="https://cdn-icons-png.flaticon.com/128/4380/4380458.png" target="_blank" width="100" height="100">
-
--->
+<!-- <div align="center" valign="top"><br>
+
+  <img align="center" alt="React" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
+  <img align="center" alt="Redux" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg">
+  <img align="center" alt="Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+  <img align="center" alt="Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg">
+  <img align="center" alt="HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+  <img align="center" alt="CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+  <img align="center" alt="nodejs" height="30" width="40" src="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg">
+  <img align="center" alt="Wa-Jest" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg">
+  <img align="center" alt="git" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg">
+  <img align="center" alt="github" height="35" width="35" src="/assets/GitHub.png">
+  <img align="center" alt="linux" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg">
+
+</div>-->
