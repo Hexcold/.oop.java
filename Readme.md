@@ -20,8 +20,8 @@
 
 ### 00 : Registro FUP   
 
-- <a href="https://github.com/Hexcold/.oop.java/tree/main/Project/00%20-%20Registros%20Fup%20%3D%20OP/Impressao">[rec] Impressao</a>
-- <a href="https://github.com/Hexcold/.oop.java/tree/main/Project/00%20-%20Registros%20Fup%20%3D%20OP/NovaMedia">[rec] Nova Media</a>
+- <a href="/Project/00 - Registros Fup = OP/Impressao/">[rec] Impressao</a>
+- <a href="/Project/00 - Registros Fup = OP/NovaMedia/">[rec] Nova Media</a>
 - <a href="https://github.com/Hexcold/.oop.java/tree/main/Project/00%20-%20Registros%20Fup%20%3D%20OP/Quantos%20est%C3%A3o%20dentro">[rec] Quantos estao dentro</a>
 
 <br>
