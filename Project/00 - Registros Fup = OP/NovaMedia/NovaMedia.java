@@ -33,8 +33,8 @@ class Aluno {
     }
 }
 
-class NovaMedia {
-    public static void main(String[] arg) {
+public class NovaMedia {
+    public static void main(String[] args) {
         Aluno alu = new Aluno();
         alu.ler();
         alu.imprimir();
