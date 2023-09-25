@@ -1,3 +1,14 @@
+/*
+O que fez?
+    - Fiz tudo e passou em todos os testes.
+Com quem fez?
+    - Fiz só, mas o Rodrigo me ajudou a encontrar uns pequenos erros
+O que aprendeu?
+    - Aprendi um pouco mais sobre List
+Quanto tempo levou?
+    - 4 horas (não sei exatamente, isso é uma especulação)
+*/
+
 import java.util.*;
 
 class Solver{
@@ -14,7 +25,7 @@ class Solver{
                 topic = new Topic(Integer.parseInt(ui[1]), Integer.parseInt(ui[2]));
             } else if(ui[0].equals("show")) {
                 System.out.println(topic);
-            } else if(ui[0].equals("ini")) {
+            } else if(ui[0].equals("in")) {
                 topic.insert(new Pass(ui[1], Integer.parseInt(ui[2])));
             } else if(ui[0].equals("out")) {//value value
                 topic.remove(ui[1]);

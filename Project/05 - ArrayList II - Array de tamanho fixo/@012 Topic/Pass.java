@@ -1,4 +1,4 @@
-class Pass {
+public class Pass {
     private String name;
     private int age;
 
@@ -13,6 +13,12 @@ class Pass {
     public String getName() {
         return this.name;
     }
+    
+    public int getAge() {
+        return age;
+    }
+    
+    @Override
     public String toString(){
         return this.name + ":" + this.age;
     }
