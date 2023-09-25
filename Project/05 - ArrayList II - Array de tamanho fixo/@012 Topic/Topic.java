@@ -6,7 +6,6 @@ import java.util.stream.Stream;
 public class Topic {
     private List<Pass> prioritySeats;
     private List<Pass> normalSeats;
-    private String topicMapString;
 
     public Topic(int capacity, int qtdPriority) {
         this.prioritySeats = new ArrayList<Pass>(qtdPriority);
