@@ -13,10 +13,10 @@ import java.util.*;
 
 class Solver{
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         Topic topic = new Topic(0, 0);
         while(true){
-            String line = scanner.nextLine();
+            String line = sc.nextLine();
             System.out.println("$" + line);
             String ui[] = line.split(" ");
 
