@@ -99,11 +99,10 @@
 
 ##
 
-### 06 : ArrayList III - Extra
+### 06 : Enums, Ordenação e Exceções
 
--
-
--
+- [@008 Agiota](/Project/06%20-%20Enums,%20Ordenação%20e%20Exceções/008%20Agiota/)
+- [@017 Porquinho](/Project/06%20-%20Enums,%20Ordenação%20e%20Exceções/017%20Porquinho/)
 
 <br>
 
@@ -113,11 +112,11 @@
 
 ##
 
-### 07 : Troca de dados e ordenação
+### 07 : Herança (extends), Interface (implements)
 
--
-
--
+- [@047 Shapes](/Project/07%20-%20Herança%20(extends),%20Interface%20(implements)/)
+- [@013 Cadastro](/Project/07%20-%20Herança%20(extends),%20Interface%20(implements)/)
+- [@043 Cofre](/Project/07%20-%20Herança%20(extends),%20Interface%20(implements)/)
 
 <br>
 
