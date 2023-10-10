@@ -23,7 +23,7 @@ class Solver{
             switch (ui[0]) {
                 case "end":
                     return;
-                
+                    
                 case "init":
                     topic = new Topic(Integer.parseInt(ui[1]), Integer.parseInt(ui[2]));
                     break;

@@ -14,6 +14,7 @@ public class Mercantil {
 
         for (int i = 0; i < qtd_caixas; i++) {
             this.caixas.add(null);
+            
         }
 
     }

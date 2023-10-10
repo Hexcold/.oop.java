@@ -42,6 +42,8 @@ public class VendingMachine {
         for (int i=0; i<this.slots.size(); i++) {
             Slot slot = this.getSlot(i);
             s += i + " [" + slot + "]\n";
+
+            
         }
         return s;
     }
