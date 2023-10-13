@@ -10,6 +10,7 @@
 
 -
 
+
 <br>
 
 ***
@@ -17,6 +18,17 @@
 ![Cover ](/assets/drift.svg)
 
 <hr>
+
+### Geral
+
+- Aqui estão dispostos todos os materiais que foram disponibilizados para a realização das respectivas atividades. Os mesmo vão estar nas pastas que abordam esses conteúdos. 
+
+
+
+>Repositório original do conteúdo
+[@senapk](https://github.com/qxcodepoo/arcade#repositório-de-poo)
+
+***
 
 ### 00 : Registro FUP
 
