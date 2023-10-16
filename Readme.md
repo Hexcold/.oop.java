@@ -124,11 +124,9 @@
 
 ##
 
-### 07 : Herança (extends), Interface (implements)
+### 07 : Herança (extends)
 
-- [@047 Shapes](/Project/07%20-%20Herança%20(extends),%20Interface%20(implements)/)
-- [@013 Cadastro](/Project/07%20-%20Herança%20(extends),%20Interface%20(implements)/)
-- [@043 Cofre](/Project/07%20-%20Herança%20(extends),%20Interface%20(implements)/)
+- [@047 Shapes](/Project/07%20-%20Herança%20(extends)/)
 
 <br>
 
@@ -137,11 +135,10 @@
 
 ##
 
-### 08 : Excessões
+### 08 : Interface (implements)
 
--
-
--
+- [@013 Cadastro](/Project/08%20-%20Interface%20(implements)/)
+- [@043 Cofre](/Project/08%20-%20Interface%20(implements)/)
 
 <br>
 
