@@ -135,10 +135,10 @@
 
 ##
 
-### 08 : Interface (implements)
+### 08 : Maps e Enum (herança)
 
-- [@013 Cadastro](/Project/08%20-%20Interface%20(implements)/)
-- [@043 Cofre](/Project/08%20-%20Interface%20(implements)/)
+- [@013 Cadastro](/Project/08%20-%20Maps%20e%20Enum%20(herança)/)
+- [@043 Cofre](/Project/08%20-%20Maps%20e%20Enum%20(herança)/)
 
 <br>
 
