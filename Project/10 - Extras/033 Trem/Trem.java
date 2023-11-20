@@ -1,40 +1,32 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
 
-public class Trem 
-{
+public class Trem {
     private ArrayList<Vagao> vagoes;
     private int maxCapacidade;
     private String movimentacao = "";
     private String cadastro = "";
 
-    Trem(int capacidade)
-    {
+    Trem(int capacidade) {
         vagoes = new ArrayList<>();
         maxCapacidade = capacidade;
     }
 
-    public void addVagao(int capacidade)
-    {
-        if (vagoes.size() >= maxCapacidade)
-        {
+    public void addVagao(int capacidade) {
+        if (vagoes.size() >= maxCapacidade) {
             throw new RuntimeException("fail: limite de vagões atingido");
         }
 
         vagoes.add(new Vagao(capacidade));
     }
 
-    public void desembarcar(String nome)
-    {
+    public void desembarcar(String nome) {
         int indexVagao = -1;
         int indexPassageiro = -1;
 
-        search:
-        for (Vagao i : vagoes)
-        {
-            for (Passageiro j : i.getPassageiros())
-            {
-                if (j.getNome().equals(nome))
-                {
+        search: for (Vagao i : vagoes) {
+            for (Passageiro j : i.getPassageiros()) {
+                if (j.getNome().equals(nome)) {
                     indexVagao = vagoes.indexOf(i);
                     indexPassageiro = i.getPassageiros().indexOf(j);
 
@@ -43,32 +35,25 @@ public class Trem
             }
         }
 
-        if (indexPassageiro == -1)
-        {
-            throw new RuntimeException("fail: "+ nome +" nao esta no trem");
+        if (indexPassageiro == -1) {
+            throw new RuntimeException("fail: " + nome + " nao esta no trem");
         }
 
         vagoes.get(indexVagao).desembarcar(nome, indexPassageiro);
         movimentacoes(nome, "out");
     }
 
-    public void embarcar(String nome)
-    {
+    public void embarcar(String nome) {
         int indexVagao = -1;
         int indexPassageiro = -1;
 
-        search:
-        for (Vagao i : vagoes)
-        {
-            for (Passageiro j : i.getPassageiros())
-            {
-                if (j.getNome().equals(nome))
-                {
+        search: for (Vagao i : vagoes) {
+            for (Passageiro j : i.getPassageiros()) {
+                if (j.getNome().equals(nome)) {
                     throw new RuntimeException("fail: " + nome + " já está no trem");
                 }
 
-                if (j.getNome().equals("-"))
-                {
+                if (j.getNome().equals("-")) {
                     indexVagao = vagoes.indexOf(i);
                     indexPassageiro = i.getPassageiros().indexOf(j);
 
@@ -79,8 +64,7 @@ public class Trem
 
         cadastro(nome);
 
-        if (indexPassageiro == -1)
-        {
+        if (indexPassageiro == -1) {
             throw new RuntimeException("fail: trem lotado");
         }
 
@@ -88,25 +72,20 @@ public class Trem
         movimentacoes(nome, "in");
     }
 
-    private void movimentacoes(String nome, String tipo)
-    {
-        if (!movimentacao.isBlank())
-        {
+    private void movimentacoes(String nome, String tipo) {
+        if (!movimentacao.isBlank()) {
             movimentacao += "\n";
         }
 
         movimentacao += nome + " " + tipo;
     }
 
-    private void cadastro(String nome)
-    {
-        if (cadastro.contains(nome))
-        {
+    private void cadastro(String nome) {
+        if (cadastro.contains(nome)) {
             return;
         }
 
-        if (!cadastro.isBlank())
-        {
+        if (!cadastro.isBlank()) {
             cadastro += "\n";
         }
 
@@ -114,27 +93,23 @@ public class Trem
     }
 
     @Override
-    public String toString()
-    {
+    public String toString() {
         String str = "";
 
-        for (Vagao i : vagoes)
-        {
+        for (Vagao i : vagoes) {
             str += "[" + i + "]";
         }
 
-        if (str.equals(""))
-        {
+        if (str.equals("")) {
             str = "[]";
         }
 
         return "Trem " + str;
     }
 
-    public String getCadastro() 
-    {
+    public String getCadastro() {
         String[] temp = cadastro.split("\n");
-        
+
         Arrays.sort(temp);
 
         cadastro = String.join("\n", temp);
@@ -142,8 +117,7 @@ public class Trem
         return cadastro;
     }
 
-    public String getMovimentacao() 
-    {
+    public String getMovimentacao() {
         return movimentacao;
     }
 }

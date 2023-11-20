@@ -1,41 +1,36 @@
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Solver {
-
-    private static Trem trem;
     private static Scanner in = new Scanner(System.in);
+    private static String[] userInput;
+    private static Trem trem;
 
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) {
 
         while (true) {
             String line = input();
             System.out.println("$" + line);
-            String[] arg = line.split(" ");
+            userInput = line.split(" ");
 
             try {
-                switch (arg[0]) {
+                switch (userInput[0]) {
                     case "end":
                         System.exit(0);
-                        return;
+                        break;
 
                     case "init":
-                        trem = new Trem(Integer.parseInt(arg[1]));
+                        trem = new Trem(toInt(userInput[1]));
                         break;
 
                     case "nwvag":
-                        trem.addVagao(Integer.parseInt(arg[1]));
+                        trem.addVagao(toInt(userInput[1]));
                         break;
 
                     case "entrar":
-                        trem.embarcar(arg[1]);
+                        trem.embarcar(userInput[1]);
                         break;
 
                     case "la":
-                        System.out.println(trem);
-                        break;
-
                     case "show":
                         System.out.println(trem);
                         break;
@@ -49,15 +44,16 @@ public class Solver {
                         break;
 
                     case "sair":
-                        trem.desembarcar(arg[1]);
+                        trem.desembarcar(userInput[1]);
                         break;
 
                     default:
                         System.out.println("fail: comando invalido");
                         break;
                 }
+            }
 
-            } catch (Exception e) {
+            catch (RuntimeException e) {
                 System.out.println(e.getMessage());
             }
         }
@@ -67,4 +63,7 @@ public class Solver {
         return in.nextLine();
     }
 
+    private static int toInt(String num) {
+        return Integer.parseInt(num);
+    }
 }
