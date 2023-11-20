@@ -1,0 +1,10 @@
+/*
+O que fez?
+    - Fiz tudo e passou em todos os testes.
+Com quem fez?
+    - O Heric me ajudou a entender o que era pra fazer e como fazer. 
+O que aprendeu?
+    - Endendi mais um pouco sobre o uso de HashMap.
+Quanto tempo levou?
+    - 2 horas (não sei exatamente, isso é uma especulação)
+*/
