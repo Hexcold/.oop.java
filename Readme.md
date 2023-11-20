@@ -4,11 +4,46 @@
 
 ## INFOR
 
-- 
+#### Aqui vou destacar algumas informações base para todos que forem analisar estes códigos!
 
--
+#
 
--
+### MakeFile
+Os arquivos MakeFile são utilizados para facilitar na hora de executar os comandos no terminal. Aqui vai o que cada comando faz e na linha abaixo o código sem MakeFile
+
+#### Utilizado para compilar o código
+
+    > make build
+
+Com MakeFile
+
+    > java *.java
+
+Sem MakeFile
+
+#### Utilizado para executar o código
+
+    > make exec
+Com MakeFile
+
+    > java -cp . Solver
+Sem MakeFile
+
+#### Utilizado para realizar os dois comandos anteriores ao mesmo tempo
+
+    > make all
+
+#
+
+### TKO
+
+O tko é um programa que pode ser utilizado para rodar os testes, é apenas necessário telo instalado na sua máquina e rodar a seguinte linha de comando
+
+    > make tko
+Com MakeFile
+
+    > tko run Solver.java cases.tio
+Sem MakeFile
 
 
 <br>
@@ -147,83 +182,33 @@
 
 ##
 
-### 09 : Mapas
+### 09 : Interface (implements)
 
--
-
--
+- [@013 Cadastro](/Project/09%20-%20Interface%20(implements)/)
 
 <br>
 
 <img src="https://cdn-icons-png.flaticon.com/128/1255/1255768.png" target="_blank" width="50" height="50">--------------------------------------------------
 <img src="https://cdn-icons-png.flaticon.com/128/1022/1022900.png" target="_blank" width="50" height="50">
-
-##
-
-### 10 : Herança I
-
--
-
--
-
-<br>
-
-<img src="https://cdn-icons-png.flaticon.com/128/1255/1255768.png" target="_blank" width="50" height="50">-------------------------------------------------------
-<img src="https://cdn-icons-png.flaticon.com/128/1022/1022900.png" target="_blank" width="50" height="50">
-
-##
-
-### 11 : Lógica I
-
--
-
--
-
-<br>
-
-<img src="https://cdn-icons-png.flaticon.com/128/1255/1255768.png" target="_blank" width="50" height="50">------------------------------------------------------------
-<img src="https://cdn-icons-png.flaticon.com/128/1022/1022900.png" target="_blank" width="50" height="50">
-
-##
-
-### 12 : Herança II
-
--
-
--
-
-<br>
-
-<img src="https://cdn-icons-png.flaticon.com/128/1255/1255768.png" target="_blank" width="50" height="50">-----------------------------------------------------------------
-<img src="https://cdn-icons-png.flaticon.com/128/1022/1022900.png" target="_blank" width="50" height="50">
-
-##
-
-### 13 : Lógica II
-
--
-
--
-
-<br>
-
-<img src="https://cdn-icons-png.flaticon.com/128/1255/1255768.png" target="_blank" width="50" height="50">----------------------------------------------------------------------
-<img src="https://cdn-icons-png.flaticon.com/128/1022/1022900.png" target="_blank" width="50" height="50">
-
-##
-
-### 13 : Herança III
-
--
-
--
-
-<br>
-
-<img src="https://cdn-icons-png.flaticon.com/128/1255/1255768.png" target="_blank" width="50" height="50">---------------------------------------------------------------------------
-<img src="https://cdn-icons-png.flaticon.com/128/1022/1022900.png" target="_blank" width="50" height="50">
 <img src="https://cdn-icons-png.flaticon.com/128/1894/1894428.png" target="_blank" width="40" height="40">
 
+##
+
+### 09 : Extras
+
+- [@023 Salario](Project/10%20-%20Extras/023%20Salário/)
+- [@033 Tream](/Project/10%20-%20Extras/033%20Trem/)
+- [@034 Carga](/Project/10%20-%20Extras/034%20Carga/)
+- [@021 Matrícula](/Project/10%20-%20Extras/021%20Matrícula/)
+- [@025 Twitter (x)](/Project/10%20-%20Extras/025%20Twitter/)
+- [@026 Whatsapp](/Project/10%20-%20Extras/025%20Whatsapp/)
+
+
+<br>
+
+<img src="https://cdn-icons-png.flaticon.com/128/1255/1255768.png" target="_blank" width="50" height="50">--------------------------------------------------
+<img src="https://cdn-icons-png.flaticon.com/128/1894/1894428.png" target="_blank" width="40" height="40">-----
+<img src="https://cdn-icons-png.flaticon.com/128/1022/1022900.png" target="_blank" width="50" height="50">
 
 <!--
  
