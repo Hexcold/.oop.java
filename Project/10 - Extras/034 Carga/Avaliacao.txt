@@ -1,0 +1,10 @@
+/*
+O que fez?
+    - Fiz tudo e passou em todos os testes.
+Com quem fez?
+    - Mykael me explicou como fazer a questão 
+O que aprendeu?
+    - Aprendi um pouco mais sobre a lógica, mas ainda tenho duvida sobre essa questão
+Quanto tempo levou?
+    - 4 horas (não sei exatamente, isso é uma especulação)
+*/
